@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Mapillary – Crowdsourced Street Photos",
+    "short_name": "Mapillary",
+    "homepage_url": "http://www.mapillary.com/",
+    "author": "Mapillary",
+    "version": "1.0.4",
+    "description": "Explore the world with Mapillary street photos.",
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    },
+    "icons": {
+        "128": "/img/mpy_chrome_logo.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
