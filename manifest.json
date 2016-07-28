@@ -2,9 +2,9 @@
     "manifest_version": 2,
     "name": "Mapillary – Crowdsourced Street Photos",
     "short_name": "Mapillary",
-    "homepage_url": "http://www.mapillary.com/",
+    "homepage_url": "https://www.mapillary.com/",
     "author": "Mapillary",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Explore the world with Mapillary street photos.",
     "chrome_url_overrides" : {
         "newtab": "index.html"
