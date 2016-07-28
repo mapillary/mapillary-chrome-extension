@@ -27,7 +27,7 @@
         
         this.showMap = function(location) {
             var map = L.map('map', {zoomControl: false}),
-                osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',              
+                osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',              
                 osmAttrib = '© <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
                 osm = new L.TileLayer(osmUrl, { maxZoom: 18, attribution: osmAttrib}),
                 marker = L.marker({
