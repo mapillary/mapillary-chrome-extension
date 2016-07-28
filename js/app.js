@@ -28,7 +28,7 @@
         this.showMap = function(location) {
             var map = L.map('map', {zoomControl: false}),
                 osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',              
-                osmAttrib = '© <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+                osmAttrib = '© <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
                 osm = new L.TileLayer(osmUrl, { maxZoom: 18, attribution: osmAttrib}),
                 marker = L.marker({
                     lat: location.lat,
@@ -89,7 +89,7 @@
             facebook: 'https://www.facebook.com/sharer/sharer.php?u=',
             twitter: 'https://twitter.com/share?text=',
             googlePlus: 'https://plus.google.com/share?url=',
-            tumblr: 'http://www.tumblr.com/share/link?url=',
+            tumblr: 'https://www.tumblr.com/share/link?url=',
             email: 'mailto:?body='
         },
         defaultTwitterText = 'Check out this photo on @mapillary:',
