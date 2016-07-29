@@ -1,6 +1,6 @@
 {
   "name": "mapillary",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Mapillary Chrome extension",
   "devDependencies": {
     "lite-server": "^2.2.0"
