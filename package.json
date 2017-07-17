@@ -1,13 +1,9 @@
 {
   "name": "mapillary",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "Mapillary Chrome extension",
   "devDependencies": {
     "lite-server": "^2.2.0"
-  },
-  "dependencies": {
-    "mapillary-js": "^1.1.1",
-    "leaflet": "^0.7.7"
   },
   "scripts": {
     "start": "npm run lite",

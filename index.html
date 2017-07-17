@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>New tab</title>
-    <link rel="stylesheet" href="/node_modules/mapillary-js/dist/mapillary-js.min.css">
-    <link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -13,9 +11,10 @@
         <a class="logo" href="https://www.mapillary.com"></a>
         <div class="button-container"><a id="explore">Explore</a></div>        
     </div>
-    <a id="map"></a>
+    <a id="map">
+        <a id="osm" class="osm-link" target="_blank">© OpenStreetMap</a>
+    </a>
     <div id="mly"></div>
-    <div class="loader"></div>
     
     <div id="share-menu" class="share-menu">
         <div id="share-button" class="share-button">
@@ -28,7 +27,6 @@
         <a class="share-option tumblr" target="_blank"></a>
         <a class="share-option email" target="_blank"></a>
     </div>
-    <script src="/js/app.js"></script>
-    <script src="/node_modules/leaflet/dist/leaflet.js"></script>    
+    <script src="/js/app.js"></script>   
 </body>
 </html>

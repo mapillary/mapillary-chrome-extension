@@ -4,7 +4,7 @@
     "short_name": "Mapillary",
     "homepage_url": "https://www.mapillary.com/",
     "author": "Mapillary",
-    "version": "1.0.5",
+    "version": "1.0.8",
     "description": "Explore the world with Mapillary street photos.",
     "chrome_url_overrides" : {
         "newtab": "index.html"

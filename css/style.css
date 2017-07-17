@@ -26,21 +26,12 @@ body {
     position: absolute;
     top: 30px;
     left: 30px;
-    height: 40px;
-    width: 40px;
-    background-image: url('../img/mpy_logo.png');
+    height: 50px;
+    width: 50px;
+    background-image: url('../img/mapillary-logo.svg');
     background-size: 100%;
-    border-radius: 4px;
     z-index: 2;
     transition: opacity .2s ease-in-out;    
-}
-
-.mapillary-js {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
 }
 
 .button-container {
@@ -73,26 +64,12 @@ body {
     position: absolute;
     bottom: 30px;
     right: 30px;
-    height: 160px;
-    width: 160px;
-    border-radius: 4px;
+    height: 180px;
+    width: 180px;
+    border-radius: 6px;
     z-index: 2;
     transition: opacity .2s ease-in-out;
-    cursor: pointer;
-}
-
-.leaflet-compact-attribution {
-    font-size: 10px;
-    line-height: 16px;
-}
-
-.leaflet-compact-attribution a {
-    display: block;
-}
-
-.leaflet-container .leaflet-control-attribution {
-    padding: 0;
-    font-size: 9px;
+    opacity: 0;
 }
 
 .share-menu {
@@ -276,27 +253,16 @@ body {
     }
 }
 
-.loader {
-    animation: rotate 3s linear infinite;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 0;
-    width: 32px;
-    height: 32px;
-    background-image: url('../img/spinner.png');
-    background-size: 100%;
-}
-
-@keyframes rotate{
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-.Cover {
-    transition: opacity .2s ease-in-out;
-}
-.CoverDone {
+.osm-link {
+    bottom: 32px;
+    color: white;
+    font-size: 12px;  
     opacity: 0;
+    padding: 0 6px 4px 0px;
+    position: absolute;
+    right: 34px;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    transition: opacity .2s ease-in-out;
+    z-index: 3;
 }
