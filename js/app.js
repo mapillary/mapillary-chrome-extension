@@ -150,13 +150,6 @@
         .then(function(response) {
             return response.json();
         }).then(function(data) {
-
-            var keys = [];
-
-            for (var index = 0; index < data.savedLocations.length; index++) {
-                keys.push(data.savedLocations[index].key);   
-            }
-            localStorage.setItem('keys', JSON.stringify(keys));
             var randomMapillary = new RandomMapillary(data.savedLocations);
         });
 
