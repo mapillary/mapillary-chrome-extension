@@ -1,0 +1,23 @@
+{
+  "description": "Mapillary browser extension",
+  "language": "javascript",
+  "maintainers": [
+    "nickplesha"
+  ],
+  "providers": [
+    {
+      "dependencies": [],
+      "description": "Mapillary browser extension",
+      "extDependencies": [],
+      "name": "mapillary_chrome_extension_provider",
+      "services": [
+          {
+              "description": "Mapillary browser extension",
+              "name": "mapillary_chrome_extension"
+          }
+      ],
+      "type": "script"
+    }
+  ],
+  "repo": "mapillary-chrome-extension"
+}
