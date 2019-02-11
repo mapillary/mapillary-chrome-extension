@@ -1,7 +1,7 @@
-Mapillary Chrome extension
+Mapillary Chrome & Firefox extension
 ===================
 
-Browser extension for [Chrome](https://www.google.com/chrome/) that shows a random beautiful image from [Mapillary](https://www.mapillary.com) every time you open a new tab. Download it on the [Chrome web store](https://chrome.google.com/webstore/detail/mapillary-%E2%80%93-crowdsourced/lkokbfpnhgcnkhecedjgdemlohbaomjd)
+Browser extension for [Chrome](https://www.google.com/chrome/) and [Firefox](https://www.mozilla.org/firefox/new/) that shows a random beautiful image from [Mapillary](https://www.mapillary.com) every time you open a new tab. Download it on the [Chrome web store](https://chrome.google.com/webstore/detail/mapillary-%E2%80%93-crowdsourced/lkokbfpnhgcnkhecedjgdemlohbaomjd) or [Firefox](https://addons.mozilla.org/firefox/addon/mapillary/).
 
 ## Install
 

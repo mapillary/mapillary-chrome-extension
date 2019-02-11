@@ -4,7 +4,7 @@
     function RandomMapillary(locations) {
         var mapillaryUrl = 'https://www.mapillary.com/app/?pKey=',
             mapillaryImageUrl = 'https://d1cuyjsrcm0gby.cloudfront.net/',
-            mapillaryMapUrl = 'http://mapillary-staticmaps.mapillary.io/v3/staticmap/image/180/180/',
+            mapillaryMapUrl = 'https://staticmaps.mapillary.com/v3/staticmap/image/180/180/',
             nextImageKey = 'nextImage',
             nextDataUrlKey = 'nextDataUrl';
         

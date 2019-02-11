@@ -11,6 +11,7 @@ body {
     position: relative;
     z-index: 2;
     -webkit-filter: brightness(90%) saturate(140%) contrast(105%);
+    filter: brightness(90%) saturate(140%) contrast(105%);
     opacity: 0;
     transition: opacity .2s ease-in;
     background-clip: content-box;
@@ -49,15 +50,10 @@ body {
     border-radius: 50px;
     padding: 10px 30px;
     color: #fff;
-    transition: opacity .2s ease-in-out;
     opacity: 0.8;
     text-decoration: none;
     cursor: pointer;
     font-weight: 100;
-}
-#explore:active,
-#explore:hover {
-    opacity: 1;
 }
 
 #map {
