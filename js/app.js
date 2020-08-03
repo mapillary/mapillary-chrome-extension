@@ -1,13 +1,13 @@
 (function() {
     'use strict';
-    
+
     function RandomMapillary(locations) {
         var mapillaryUrl = 'https://www.mapillary.com/app/?pKey=',
             mapillaryImageUrl = 'https://d1cuyjsrcm0gby.cloudfront.net/',
             mapillaryMapUrl = 'https://staticmaps.mapillary.com/v3/staticmap/image/180/180/',
             nextImageKey = 'nextImage',
             nextDataUrlKey = 'nextDataUrl';
-        
+
         this.getRandomLocation = function() {
             var nextImage = localStorage.getItem(nextImageKey);
             if (nextImage) {
@@ -16,19 +16,19 @@
                 image.isPreloaded = true;
                 return image;
             }
-            return locations[Math.floor(Math.random() * locations.length)];            
+            return locations[Math.floor(Math.random() * locations.length)];
         }
-        
+
         this.setBackgroundImage = function(image) {
             var backgroundImage = new Image(),
                 imageUrl = mapillaryImageUrl + image.key + '/thumb-2048.jpg';
-            
+
              if (image.isPreloaded) {
                 return new Promise(function(resolve) {
                     resolve(localStorage.getItem(nextDataUrlKey));
                 })
-            } 
-                
+            }
+
             return new Promise(function(resolve, reject) {
                 backgroundImage.onload = function() {
                     resolve(imageUrl);
@@ -42,8 +42,8 @@
 
         this.setMapImage = function(key) {
             var backgroundImage = new Image(),
-                imageUrl = mapillaryMapUrl + key + '.png?zoom=3&style=mapbox_streets';
-                
+                imageUrl = mapillaryMapUrl + key + '.png?zoom=3&style=carto_light_all';
+
             return new Promise(function(resolve, reject) {
                 backgroundImage.onload = function() {
                     resolve(imageUrl);
@@ -77,9 +77,9 @@
                 reader.readAsDataURL(xmlHTTP.response);
             };
 
-            xmlHTTP.send(null); 
-        } 
-        
+            xmlHTTP.send(null);
+        }
+
         this.init = function() {
             var self = this,
                 location = this.getRandomLocation(),
@@ -88,7 +88,7 @@
                 map = document.getElementById('map'),
                 osm = document.getElementById('osm'),
                 shareMenu = new ShareMenu(mapillaryUrl + location.key);
-                
+
             this.setBackgroundImage(location).then(function(imageUrl) {
                 background.style.backgroundImage = "url('" + imageUrl + "')";
                 background.style.opacity = "1";
@@ -97,7 +97,7 @@
 
             this.setMapImage(location.key).then(function(imageUrl) {
                 map.style.backgroundImage = "url('" + imageUrl + "')";
-                map.style.opacity = "0.9";   
+                map.style.opacity = "0.9";
                 map.href = mapillaryUrl + location.key + '&focus=map';
                 osm.style.opacity = "1";
                 osm.href = 'https://www.openstreetmap.org/#map=15/' + location.lat + '/' + location.lon;
@@ -106,7 +106,7 @@
             exploreButton.href = mapillaryUrl + location.key + '&focus=photo';
 
         }
-        
+
         this.init();
     }
 
@@ -120,12 +120,12 @@
         },
         defaultTwitterText = 'Check out this photo on @mapillary:',
         defaultEmailSubject = '&Subject=Check out this photo on Mapillary';
-        
+
         this.init = function() {
             var options = document.getElementsByClassName('share-option'),
                 shareButton = document.getElementById('share-button'),
                 shareMenu = document.getElementById('share-menu');
-                        
+
             options[0].href = shareUrls.facebook + url;
             options[1].href = shareUrls.twitter + defaultTwitterText + '&url=' + url;
             options[2].href = shareUrls.googlePlus + url;
@@ -133,7 +133,7 @@
             options[4].onclick = function() {
                 chrome.tabs.create({url: shareUrls.email + url + defaultEmailSubject});
             }
-            
+
             shareButton.onclick = function() {
                 if (shareMenu.classList.contains('open')) {
                     shareMenu.classList.remove('open');
@@ -142,7 +142,7 @@
                 }
             }
         }
-        
+
         this.init();
     }
 
