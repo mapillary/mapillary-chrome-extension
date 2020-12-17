@@ -4,7 +4,7 @@
   "description": "Mapillary Chrome extension",
   "devDependencies": {
     "lite-server": "2.2.0",
-    "node-fetch": "2.3.0",
+    "node-fetch": "2.6.1",
     "web-ext": "2.9.1"
   },
   "scripts": {
